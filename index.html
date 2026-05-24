@@ -58,7 +58,8 @@
 
     .hero-copy,
     .hero-card,
-    .gofundme {
+    .gofundme,
+    .content-section {
       background: var(--card);
       backdrop-filter: blur(10px);
       border: 1px solid var(--line);
@@ -156,20 +157,31 @@
 
     .gofundme {
       padding: 28px 30px 34px;
-      margin: 6px 0 34px;
+      margin: 6px 0 18px;
     }
 
-    .gofundme h2 {
+    .gofundme h2,
+    .content-section h2 {
       font-size: clamp(1.6rem, 3vw, 2.5rem);
       margin-bottom: 12px;
       letter-spacing: -0.03em;
     }
 
-    .gofundme p {
+    .gofundme p,
+    .content-section p {
       color: var(--muted);
       font-size: 1rem;
       max-width: 60ch;
       margin-bottom: 18px;
+    }
+
+    .content-section {
+      margin: 0 0 18px;
+      padding: 30px;
+    }
+
+    .content-section p:last-child {
+      margin-bottom: 0;
     }
 
     .footer {
@@ -189,13 +201,15 @@
 
       .hero-copy,
       .hero-card,
-      .gofundme {
+      .gofundme,
+      .content-section {
         border-radius: 22px;
       }
 
       .hero-copy,
       .hero-card,
-      .gofundme {
+      .gofundme,
+      .content-section {
         padding: 28px 22px;
       }
     }
@@ -235,6 +249,31 @@
           Support the current GoFundMe campaign and help move the nonprofit mission forward with direct fundraising behind it.
         </p>
         <a class="btn btn-primary" href="https://www.gofundme.com/f/help-miikkoinc-provide-safe-transitional-housing?attribution_id=sl:d2c23498-5641-44cb-95d9-37a21069a9b3&amp;lang=en_US&amp;ts=1778546941&amp;utm_campaign=fp_sharesheet&amp;utm_content=amp17_te-amp20_control&amp;utm_medium=customer&amp;utm_source=copy_link" target="_blank" rel="noopener">Open the GoFundMe</a>
+      </section>
+
+      <section class="content-section">
+        <div class="eyebrow">Our Mission</div>
+        <h2>Our Mission</h2>
+        <p>
+          In the city of Philadelphia, safe and supportive postoperative transitional housing options for Trans-Male and Trans-Female individuals remain extremely limited, and in many cases, unavailable.
+        </p>
+        <p>
+          MIIKKO.INC was founded from a deeply personal experience and a commitment to creating change where support systems have fallen short. After witnessing firsthand the challenges faced by a loved one recovering from postoperative surgery - including harassment, bullying, threats, theft, and unsafe shelter conditions - it became clear that there was a critical need for a clean, secure, and affirming space dedicated to recovery and stability.
+        </p>
+        <p>
+          Our organization exists to provide temporary transitional residency and supportive resources for Trans-Male and Trans-Female individuals recovering from surgery and navigating vulnerable stages of transition. We are committed to creating an environment built on dignity, safety, compassion, and respect.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <div class="eyebrow">More About Us</div>
+        <h2>More About Us</h2>
+        <p>
+          In addition to housing support, MIIKKO.INC connects participants with valuable community resources, including financial assistance programs, permanent housing opportunities, educational support, and career development services.
+        </p>
+        <p>
+          Through advocacy, care, and community partnership, our mission is to help individuals heal, rebuild, and move forward with confidence and stability.
+        </p>
       </section>
     </main>
 

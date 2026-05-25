@@ -113,44 +113,12 @@
       font-weight: 820;
     }
 
-    .cta-row {
+    .footer-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 24px;
-    }
-
-    .contact-strip {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin: 0 0 24px;
-    }
-
-    .contact-card {
-      border: 1px solid var(--soft-line);
-      border-radius: 22px;
-      background: #ffffff;
-      padding: 14px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      font-weight: 800;
-    }
-
-    .contact-card span {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--text);
-      font-size: 0.74rem;
-      font-weight: 950;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .contact-card a {
-      color: var(--text);
-      text-decoration: none;
-      border-bottom: 2px solid var(--soft-line);
+      justify-content: center;
+      margin: 18px 0 0;
     }
 
     .btn {
@@ -285,8 +253,8 @@
         font-size: clamp(3rem, 15vw, 4.7rem);
       }
 
-      .contact-strip {
-        grid-template-columns: 1fr;
+      .footer-actions {
+        display: grid;
       }
     }
   </style>
@@ -309,21 +277,6 @@
           <p class="lead">
             Miikko.Inc is focused on creating <strong>safer access</strong> to temporary housing, community support, and dignified visibility for LGBTQ trans males and trans females.
           </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://www.gofundme.com/f/help-miikkoinc-provide-safe-transitional-housing?attribution_id=sl:d2c23498-5641-44cb-95d9-37a21069a9b3&amp;lang=en_US&amp;ts=1778546941&amp;utm_campaign=fp_sharesheet&amp;utm_content=amp17_te-amp20_control&amp;utm_medium=customer&amp;utm_source=copy_link" target="_blank" rel="noopener">Support the GoFundMe</a>
-            <a class="btn btn-secondary" href="https://venmo.com/code?user_id=4587564619007121361&amp;created=1779462809.0530539&amp;printed=1" target="_blank" rel="noopener">Donate via Venmo</a>
-            <a class="btn btn-secondary" href="mailto:vroyster@miikko.org">Contact Miikko.Inc</a>
-          </div>
-          <div class="contact-strip" aria-label="Miikko.Inc contact options">
-            <div class="contact-card">
-              <span>Email</span>
-              <a href="mailto:vroyster@miikko.org">vroyster@miikko.org</a>
-            </div>
-            <div class="contact-card">
-              <span>Direct Donation</span>
-              <a href="https://venmo.com/code?user_id=4587564619007121361&amp;created=1779462809.0530539&amp;printed=1" target="_blank" rel="noopener">Donate directly via Venmo</a>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -356,6 +309,11 @@
     <footer class="footer">
       <div class="pride-banner" aria-label="LGBTQ pride banner">
         <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="footer-actions" aria-label="Miikko.Inc contact and donation links">
+        <a class="btn btn-secondary" href="mailto:vroyster@miikko.org">Contact</a>
+        <a class="btn btn-primary" href="https://venmo.com/code?user_id=4587564619007121361&amp;created=1779462809.0530539&amp;printed=1" target="_blank" rel="noopener">Donate via Venmo</a>
+        <a class="btn btn-secondary" href="https://www.gofundme.com/f/help-miikkoinc-provide-safe-transitional-housing?attribution_id=sl:d2c23498-5641-44cb-95d9-37a21069a9b3&amp;lang=en_US&amp;ts=1778546941&amp;utm_campaign=fp_sharesheet&amp;utm_content=amp17_te-amp20_control&amp;utm_medium=customer&amp;utm_source=copy_link" target="_blank" rel="noopener">Donate via GoFundMe</a>
       </div>
     </footer>
   </div>

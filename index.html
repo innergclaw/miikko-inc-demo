@@ -197,6 +197,33 @@
       margin-bottom: 0;
     }
 
+    .more-about-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 0.45fr);
+      gap: 22px;
+      align-items: end;
+    }
+
+    .more-about-copy {
+      min-width: 0;
+    }
+
+    .more-about-photo {
+      align-self: stretch;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      min-height: 360px;
+      overflow: hidden;
+    }
+
+    .more-about-photo img {
+      width: min(100%, 330px);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 18px 26px rgba(17, 17, 17, 0.18));
+    }
+
     .lead strong,
     .content-section strong {
       color: var(--text);
@@ -256,6 +283,18 @@
       .footer-actions {
         display: grid;
       }
+
+      .more-about-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .more-about-photo {
+        min-height: 0;
+      }
+
+      .more-about-photo img {
+        width: min(100%, 280px);
+      }
     }
 
   </style>
@@ -297,13 +336,20 @@
 
       <section class="content-section">
         <div class="eyebrow">More About Us</div>
-        <h2>More About Us</h2>
-        <p>
-          In addition to housing support, MIIKKO.INC connects participants with valuable community resources, including <strong>financial assistance programs</strong>, <strong>permanent housing opportunities</strong>, educational support, and career development services.
-        </p>
-        <p>
-          Through <strong>advocacy, care, and community partnership</strong>, our mission is to help individuals heal, rebuild, and move forward with <strong>confidence and stability</strong>.
-        </p>
+        <div class="more-about-layout">
+          <div class="more-about-copy">
+            <h2>More About Us</h2>
+            <p>
+              In addition to housing support, MIIKKO.INC connects participants with valuable community resources, including <strong>financial assistance programs</strong>, <strong>permanent housing opportunities</strong>, educational support, and career development services.
+            </p>
+            <p>
+              Through <strong>advocacy, care, and community partnership</strong>, our mission is to help individuals heal, rebuild, and move forward with <strong>confidence and stability</strong>.
+            </p>
+          </div>
+          <figure class="more-about-photo">
+            <img src="miikko-about-cutout.png" alt="MIIKKO.INC representative portrait">
+          </figure>
+        </div>
       </section>
     </main>
 
